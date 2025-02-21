@@ -1,0 +1,8 @@
+<launch>
+  <node name="gps_serial_node" pkg="gps_serial" type="gps_serial_node" output="screen">
+    <param name="port" value="/dev/ttyUSB0"/>
+    <param name="baudrate" value="115200"/>
+    <param name="output_file" value="/media/xec/yjy/data/0/gps.txt"/>
+  </node>
+</launch>
+
