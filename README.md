@@ -43,8 +43,16 @@ catkin_make --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```bash
 roslaunch ouster_ros sensor.launch
 ```
+注意sensor.launch启动时，需要common.launch，不要删掉了。
+
 除了我们的修改外，还需要对lidar的ip进行设置。目前有两个ouster雷达，编号05D和新的。IP分别为：  
 `sensor_hostname`: 192.168.1.5    
 `sensor_hostname`: 169.254.206.157  
+
+## 电脑端IP设置
+对于169的lidar，地址、掩码、网关设置如下：  
+169.254.206.xxx  
+255.255.255.0  
+169.254.206.1
 
 
